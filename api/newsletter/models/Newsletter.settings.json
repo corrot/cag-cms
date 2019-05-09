@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "Newsletter",
+  "info": {
+    "name": "newsletter",
+    "description": "Newsletters"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Article": {
+      "minLength": 100,
+      "required": true,
+      "unique": true,
+      "type": "text"
+    },
+    "Title": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}
