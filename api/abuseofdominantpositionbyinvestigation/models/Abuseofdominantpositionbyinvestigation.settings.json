@@ -1,0 +1,48 @@
+{
+  "connection": "default",
+  "collectionName": "AbuseOfDominantPositionByInvestigation",
+  "info": {
+    "name": "abuseofdominantpositionbyinvestigation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Title_ge": {
+      "unique": true,
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Annotation_ge": {
+      "type": "text"
+    },
+    "Document_ge": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "Tags_ge": {
+      "type": "string"
+    },
+    "Title_en": {
+      "type": "string"
+    },
+    "Annotation_en": {
+      "type": "text"
+    },
+    "Document_en": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Tags_en": {
+      "type": "string"
+    }
+  }
+}
