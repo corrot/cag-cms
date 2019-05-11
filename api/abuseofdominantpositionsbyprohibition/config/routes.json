@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/abuseofdominantpositionsbyprohibitions",
+      "handler": "Abuseofdominantpositionsbyprohibition.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/abuseofdominantpositionsbyprohibitions/count",
+      "handler": "Abuseofdominantpositionsbyprohibition.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/abuseofdominantpositionsbyprohibitions/:id",
+      "handler": "Abuseofdominantpositionsbyprohibition.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/abuseofdominantpositionsbyprohibitions",
+      "handler": "Abuseofdominantpositionsbyprohibition.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/abuseofdominantpositionsbyprohibitions/:id",
+      "handler": "Abuseofdominantpositionsbyprohibition.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/abuseofdominantpositionsbyprohibitions/:id",
+      "handler": "Abuseofdominantpositionsbyprohibition.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

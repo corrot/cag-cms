@@ -1,0 +1,46 @@
+{
+  "connection": "default",
+  "collectionName": "AbuseOfDominantPositionsByProhibition",
+  "info": {
+    "name": "abuseofdominantpositionsbyprohibition",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Date": {
+      "type": "date"
+    },
+    "Title_ge": {
+      "type": "string"
+    },
+    "Annotation_ge": {
+      "type": "text"
+    },
+    "Document_ge": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Tags_ge": {
+      "type": "string"
+    },
+    "Title_en": {
+      "type": "string"
+    },
+    "Annotation_en": {
+      "type": "text"
+    },
+    "Document_en": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Tags_en": {
+      "type": "string"
+    }
+  }
+}
